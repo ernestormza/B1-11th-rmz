@@ -25,6 +25,7 @@
             <ul class="right hide-on-med-and-down">
               <li><a href="/">Home</a></li>
               <li><a href="/ideas">Ideas</a></li>
+              <li><a href="/recipes">Recipes</a></li>
               <% if user_signed_in? %>
                 <li><%= image_tag current_user.gravatar_url(:size => 60), :class => 'circle' %></li>
                 <li><%= link_to 'Edit Profile', edit_user_registration_path %></li>

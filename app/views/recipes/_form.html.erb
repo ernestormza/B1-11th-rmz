@@ -11,27 +11,35 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="input_field">
     <%= f.label :name %>
     <%= f.text_field :name %>
   </div>
 
-  <div class="field">
+  <div class="input_field">
     <%= f.label :ingredients %>
-    <%= f.text_area :ingredients %>
+    <%= f.text_area :ingredients, :class => 'materialize-textarea validate' %>
   </div>
 
-  <div class="field">
+
+  <div class="input_field">
     <%= f.label :preparation %>
-    <%= f.text_area :preparation %>
+    <%= f.text_area :preparation, :class => 'materialize-textarea validate' %>
   </div>
 
-  <div class="field">
-    <%= f.label :image %>
-    <%= f.text_field :image %>
-  </div>
+
+       <div class="file-field input-field">
+           <div class="btn amber">
+            <span>Picture</span>
+              <%= f.file_field :picture %>
+          </div>
+           <div class="file-path-wrapper">
+           <input class="file-path validate" type="text" placeholder="Upload a file">
+          </div>
+        </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Save', :class => 'waves-effect waves-light btn amber' %>
   </div>
 <% end %>
+
