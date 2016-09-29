@@ -1,0 +1,7 @@
+<h1>Editing Idea</h1>
+
+<%= render 'form', idea: @idea %>
+
+<%= link_to '<i class="material-icons left">remove_red_eye</i> Show'.html_safe, @idea, :class => 'waves-effect waves-light btn-flat' %>
+<%= link_to '<i class="material-icons left">arrow_back</i> Back'.html_safe, ideas_path, :class => 'waves-effect waves-light btn-flat' %>
+
